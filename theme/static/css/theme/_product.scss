@@ -1,0 +1,7 @@
+.RequestDemoBox{
+  //@include make-row();
+  @include clearfix;
+  background-color: $light-gray;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}

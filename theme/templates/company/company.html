@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About GliaCloud
+{% endblock %}
+
+{% block body %}
+
+    {% include 'components/header.html' with background='BackgroundBlueBayoux' title='About GliaCloud' light=True %}
+
+    {% include 'sections/company_about_section.html' %}
+    {% include 'sections/company_mission_section.html' %}
+    {% include 'sections/company_members_section.html' %}
+    {% include 'sections/company_awards_section.html' %}
+    {% include 'sections/company_call_to_section.html' %}
+
+
+{% endblock %}

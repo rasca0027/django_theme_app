@@ -1,0 +1,82 @@
+{% extends 'sections/base_section.html' %}
+{% load static %}
+
+{% block background-class %}
+    BackgroundWhite
+{% endblock %}
+
+
+
+{% block section-title %}
+    One Team, One Mission
+{% endblock%}
+
+{% block section-body %}
+    <div class="row">
+        <div class="col-md-4 col-sm-6" style="overflow: hidden">
+            {% static 'image/members/david.jpg' as david %}
+            {% include 'components/member-rectangle.html' with name='David' title='Chief Executive Officer' avatar=david %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% include 'components/member-rectangle.html' with name='Tim' title='General Manager' avatar='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xta1/v/t1.0-1/p320x320/11262010_10207191546727400_4286361288266645994_n.jpg?oh=f9b5673eb226f2d2a317708e339fcc50&oe=56797779&__gda__=1450335750_a458a628ee35047bea6246cff03c1895'%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/andy.jpg' as andy %}
+            {% include 'components/member-rectangle.html' with name='Andy' title='Chief Technology Officer' avatar=andy%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/henhsen.jpg' as hhh%}
+            {% include 'components/member-rectangle.html' with name='HHH' title='Chief Data Scientist' avatar=hhh%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/agnes.jpg' as agnes %}
+            {% include 'components/member-rectangle.html' with name='Agnes' title='Chief Operating Officer' avatar=agnes%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/dewey.jpg' as dewey %}
+            {% include 'components/member-rectangle.html' with name='Dewey' title='UI/UX Design Director' avatar=dewey%}
+        </div>
+
+        {% comment %}
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/ethan.png' as ethan %}
+            {% include 'components/member-rectangle.html' with name='Ethan' title='UI/UX Designr' avatar=ethan%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% include 'components/member-rectangle.html' with name='George' title='Senior Enginer' avatar='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png'%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/michelle.jpg' as michelle %}
+            {% include 'components/member-rectangle.html' with name='Michelle' title='Senior Engineer' avatar=michelle %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/kelly.jpg' as kelly %}
+            {% include 'components/member-rectangle.html' with name='Kelly' title='Engineer' avatar=kelly %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/anne.JPG' as anne %}
+            {% include 'components/member-rectangle.html' with name='Anne' title='Engineer' avatar=anne %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/dsw.jpg' as dsw %}
+            {% include 'components/member-rectangle.html' with name='Jackie' title='Engineer' avatar=dsw%}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% static 'image/members/yao.jpg' as yao %}
+            {% include 'components/member-rectangle.html' with name='Phoebe' title='Engineer' avatar=yao %}
+        </div>
+
+        {% endcomment %}
+    </div>
+{% endblock %}

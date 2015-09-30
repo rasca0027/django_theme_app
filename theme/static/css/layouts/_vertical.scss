@@ -1,0 +1,12 @@
+.VerticalMiddle{
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.VerticalMiddle-inner{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

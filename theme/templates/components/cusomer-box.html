@@ -1,0 +1,17 @@
+{% load static %}
+<div class="text-center">
+    {% if icon %}
+        <div class="icon {{ icon }}"></div>
+    {% endif %}
+
+    {% if image %}
+        <img class="GliaImage" src="{% static image %}"/>
+    {% endif %}
+
+    <div class="GliaH3 text-center">
+        {{ title }}
+    </div>
+    <div class="GliaP text-center">
+        {{ subtitle }}
+    </div>
+</div>

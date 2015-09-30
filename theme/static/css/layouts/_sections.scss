@@ -1,0 +1,88 @@
+$section-component-margin-top: 30px;
+
+.Section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  min-height: 210px;
+}
+
+.Section-component {
+  margin-top: $section-component-margin-top;
+}
+
+
+.Section--lightPurple{
+  @extend .Section;
+  background-color: $light-purple;
+}
+
+.Section--gliaBlue{
+  @extend .Section;
+  background-color: $glia-blue;
+}
+
+
+.Section--white{
+  @extend .Section;
+  background-color: $white;
+}
+
+
+.Section--lightGray{
+  @extend .Section;
+  background-color: $light-gray;
+}
+
+.Section--lightPurple{
+  @extend .Section;
+  background-color: $light-purple;
+}
+
+
+.VerticalSection-image{
+  @include make-xs-column(12);
+  @include make-sm-column-offset(3);
+  @include make-sm-column(6);
+  text-align: center;
+}
+
+
+.VerticalSection-title{
+  @include make-xs-column(12);
+  @extend .GliaH2;
+
+  // TODO: refactor latter
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+
+  text-align: left;
+  @media (min-width: $screen-sm-min) {
+    text-align: center;
+  }
+
+}
+
+// TODO: refactor latter
+.Section-title{
+  margin-bottom: 30px !important;
+}
+
+.VerticalSection-content{
+  @include make-sm-column-offset(2);
+  @include make-sm-column(8);
+  @extend .SectionP;
+}
+
+
+.TwoColumnSection-content{
+  @extend .VerticalSection-content;
+  @include make-md-column-offset(1);
+  @include make-md-column(4);
+  @include make-md-column-pull(6)
+}
+
+.TwoColumnSection-image{
+  @include make-md-column-offset(1);
+  @include make-md-column(5);
+  @include make-md-column-push(5)
+}

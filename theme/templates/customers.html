@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    We work with many industries
+{% endblock %}
+
+{% block body %}
+
+    {% include 'components/header.html' with light=True title='Customer, Client, Family' background='BackgroundStrikeMaster' %}
+
+    <div class="Section BackgroundSelago">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="GliaH2">
+                        We work with many industries
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                {% include 'components/box-content.html' with icon='icon_industry_ad' header='Advertising' content="Sales analysis <br/> Basket analysis<br/> RFM analysis" %}
+                {% include 'components/box-content.html' with icon='icon_industry_ecommerce' header='RETAIL' content="CRM Analysis<br/>OTO solutions<br/>Inventory management system" %}
+                {% include 'components/box-content.html' with icon='icon_industry_retail' header='Finance' content="Market Data API<br/>" %}
+            </div>
+
+            <div class="row">
+                {% include 'components/box-content.html' with icon='icon_industry_iot' header='IOT / CONSUMER ELECTRONICS' content="Market Data API<br/>Cross device integration<br/>User experience optimization" %}
+                {% include 'components/box-content.html' with icon='icon_industry_gaming' header='GAMING' content="Precise KPI calculation<br/>Funnel analysis<br/>Cohort analysis" %}
+                {% include 'components/box-content.html' with icon='icon_industry_healthcare' header='HEALTHCARE' content="Health Management<br/>Cross Device Data Exchange<br/>Proactive Analysis System" %}
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="Section BackgroundWhite">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="GliaH2">
+                        Our Customers
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8 text-center">
+                    <div class="SectionP CornflowerBlueText">
+                        Our Big Data solution allow our customers cross industries to embrace the power of  big data: they can see the data, understand the data, analyze the data, and most likely turn data into revenue.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-5 Section-customer">
+                    {% include 'components/cusomer-box.html' with image='icons/img_logo_tagtoo.png'  title='Programmatic Advertising Platform' %}
+                </div>
+                <div class="col-sm-5 Section-customer">
+                    {% include 'components/cusomer-box.html' with image='icons/img_logo_kii.png'  title='Cloud Mobile Application Development Platform' %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-5 Section-customer">
+                    {% include 'components/cusomer-box.html' with image='icons/img_logo_telescopes.png' title='Renown vertical eCommerce Website' %}
+                </div>
+                <div class="col-sm-5 Section-customer">
+                    {% include 'components/cusomer-box.html' with image='icons/binocularscom_logo.png'  title='Renown vertical eCommerce Website' %}
+                </div>
+            </div>
+
+            <div class="Section-customer">
+                {% include 'demo/request-demo-row.html' %}
+            </div>
+
+
+        </div>
+    </div>
+
+{% endblock %}

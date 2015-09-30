@@ -1,0 +1,22 @@
+.StackedContent{
+  text-align: center;
+}
+
+.StackedContent-icon{
+  margin-top: $section-component-margin-top;
+}
+
+.StackedContent-paragraph{
+  @include center-block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.StackedContent-paragraph--textLeft{
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+

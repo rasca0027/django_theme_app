@@ -1,0 +1,31 @@
+.Header{
+  height: 285px;
+  padding-top: 16px;
+}
+
+.Header-title{
+  text-align: center;
+  margin-top: 55px;
+  @media (min-width: $screen-md-min) {
+    margin-top: 95px;
+  }
+}
+
+
+.IndexHeader{
+  margin-top: 50px;
+  @media (min-width: $screen-md-min) {
+    margin-top: 50px;
+    margin-bottom: 85px;
+  }
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.IndexSubTitle{
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+

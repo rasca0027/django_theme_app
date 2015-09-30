@@ -1,0 +1,31 @@
+@import "colors";
+@import "icons";
+@import "variable";
+@import "bootstrap";
+@import 'background';
+@import "utility";
+@import "layouts/sections";
+@import "layouts/vertical";
+@import "typography";
+@import "components/triple_box";
+@import "components/member-rectangle";
+@import "components/award-box";
+@import "components/header";
+@import "components/stacked-content";
+@import "components/feature-item";
+@import "components/navbar";
+@import "components/footer";
+@import "components/forms";
+@import 'components/lists';
+@import "theme/demo";
+@import "theme/contact";
+@import "theme/product";
+@import "theme/customer";
+
+.icon{
+  display: inline-block;
+}
+
+.GliaImage{
+  width: 100%;
+}

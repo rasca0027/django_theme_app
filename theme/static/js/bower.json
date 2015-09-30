@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/livingbio/www.gliacloud.com",
+  "authors": [
+    "tim <tim.yellow@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "matchHeight": "~0.6.0",
+    "headroom.js": "~0.7.0"
+  },
+  "devDependencies": {
+    "matchHeight": "~0.6.0"
+  }
+}

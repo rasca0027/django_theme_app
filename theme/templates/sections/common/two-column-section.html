@@ -1,0 +1,39 @@
+
+{% load static %}
+
+<div class="Section--lightGray">
+    <div class="container">
+        <div class="row">
+
+            <div class="TwoColumnSection-image" {% if height_group %} data-mh='{{ height_group }}'{% endif %}>
+                <div class="VerticalMiddle">
+                    <div class="VerticalMiddle-inner">
+                        <img class='GliaImage' src="{%  static image %}"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="TwoColumnSection-content " {% if height_group %} data-mh='{{ height_group }}'{% endif %}>
+
+                <div class="StackedContent">
+                    <h2 class="GliaH2 text-left Section-title">
+                        {{ header }}
+                    </h2>
+
+                    <p class="SectionP text-left">
+                        {{ p1 }}
+                    </p>
+
+                    {% if p2 %}
+                    <p class="SectionP text-left">
+                        {{ p2 }}
+                    </p>
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

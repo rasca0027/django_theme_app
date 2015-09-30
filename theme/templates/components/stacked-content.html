@@ -1,0 +1,25 @@
+{% load static %}
+
+<div class="StackedContent">
+
+    {% if icon %}
+        <div class="icon {{ icon }} StackedContent-icon"></div>
+    {% endif %}
+
+    {% if image %}
+        <img class="GliaImage StackedContent-icon" src="{% static image %}"/>
+    {% endif %}
+
+    <h3 class="GliaH3 {% if text_left %} text-left {% endif %}"> {{ header }}</h3>
+
+    <p class="GliaP StackedContent-paragraph {% if text_left %} StackedContent-paragraph--textLeft {% endif %}">
+        {{ content }}
+    </p>
+
+    {% if content2 %}
+        <p class="GliaP StackedContent-paragraph {% if text_left %} StackedContent-paragraph--textLeft {% endif %}">
+            {{ content2 }}
+        </p>
+    {% endif %}
+
+</div>

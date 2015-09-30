@@ -1,0 +1,27 @@
+
+
+.MemberRectangle{
+  border: 1px solid #D8E2FD;
+  background-color: #F4F4F4;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  max-height: 136px;
+  min-height: 136px;
+}
+
+.MemberRectangle-left{
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+.MemberRectangle-right{
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+

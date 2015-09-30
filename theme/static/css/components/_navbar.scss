@@ -1,0 +1,22 @@
+.navbar--light a{
+  color: $white !important;
+}
+
+.navbar-toggle .icon-bar {
+  width: 30px;
+  height: 5px;
+  border-radius: 3px;
+}
+
+.glia-navbar-brand{
+  margin-left: 7px;
+  padding:0;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 5px;
+}
+
+.navbar-toggle{
+  margin-top: 1px;
+}

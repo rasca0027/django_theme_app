@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block title %}
+    External API Service by GliaCloud
+{% endblock %}
+
+
+{% block body %}
+
+    <div style="padding-top: 16px; height: 630px; width: 100%; background-position: center; background-size: cover; background-repeat: repeat;
+                background-image: url({% static 'image/cupcakes-1920.jpg' %})">
+        {% include 'components/navigation/navigation.html' with light=True%}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 text-center">
+                    <h2 class="IndexHeader">ApiCake</h2>
+                    <div class="IndexSubTitle">
+                        Our external api solution<br>makes utilizing data a piece of cake.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'sections/features.html' %}
+
+    {% comment %}
+    <div class="Section--white">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="GliaH2">Features</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+            </div>
+            <div class="row">
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+                {% include 'components/feature-item.html' with icon='icon_feature_lightning' content='GliaCloud platform is designed to handle structured and unstructured data in a highly efficient manner, enabling fast and efficient queries to help you make real time business decisions.'%}
+            </div>
+
+        </div>
+    </div>
+    {% endcomment %}
+
+
+    {% include 'sections/issue01.html' %}
+    {% include 'sections/issue02.html' %}
+    {% include 'sections/issue03.html' %}
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'sections/base_section.html' %}
+
+{% block background-class %}
+    BackgroundBlueBayoux
+{% endblock %}
+
+
+{% block title-class %}
+    WhiteText
+{% endblock %}
+
+
+{% block section-title %}
+    Awards
+{% endblock%}
+
+{% block section-body %}
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            {% include 'components/award-box.html' with image='icons/img_logo_evernote.png' title='2012<br/>Evernote Hackathon Taipei Champion' %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% include 'components/award-box.html' with image='icons/img_logo_googleCloud.png' title='2013<br/> Google Developer Challenge Finalist' %}
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            {% include 'components/award-box.html' with image='icons/img_logo_baidu.png' title='2014<br/> BaiDu Cloud Hackathon Market Potential Award' %}
+        </div>
+    </div>
+{% endblock %}

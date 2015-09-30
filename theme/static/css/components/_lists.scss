@@ -1,0 +1,20 @@
+.GliaDashedLists{
+  padding-left: 10px;
+  list-style: none;
+  list-style-position: inside;
+
+  > .GliaDashedList{
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    @extend .GliaP--14px;
+    /*
+    @media (min-width: $screen-md-min) {
+      @extend .GliaP--16px;
+    }
+    */
+  }
+
+}

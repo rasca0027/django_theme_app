@@ -1,0 +1,45 @@
+{% extends 'sections/base_section.html' %}
+
+
+{% block background-class %}
+   BackgroundWhite
+{% endblock %}
+
+
+{% block section-title %}
+    Features
+{% endblock%}
+
+
+{% block section-body %}
+
+    <div class="row">
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='icon-access' header='Better Data Access' content='One stop service with multiple external APIs allow you to access more data easily.' %}
+        </div>
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='icon-privilege' header='Handy Permission Manage' content='To create organization and manage access privileges among members efficiently.' %}
+        </div>
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='icon-predict' header='Deep Insights through Predictions' content='Our powerful prediction models provide big data analytics and visualized graphs which allow you to gain deep insights from.' %}
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% comment %}
+<div class="Section--white">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="GliaH2">Industries</h2>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+{% endcomment %}

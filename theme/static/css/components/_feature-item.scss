@@ -1,0 +1,13 @@
+.FeatureItem{
+}
+
+.FeatureItem-icon{
+  @include make-xs-column(4);
+  @include make-sm-column(1);
+  vertical-align: middle;
+}
+
+.FeatureItem-content{
+  @include make-xs-column(8);
+  @include make-sm-column(3);
+}

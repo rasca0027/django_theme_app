@@ -1,0 +1,17 @@
+
+.TripleBox{
+  @include make-md-column(4, 0px);
+  border: 1px solid #EBEBEB;
+  text-align: center;
+  background-color: $white;
+  height: 289px;
+}
+
+.Box-icon{
+  margin-top: 30px;
+}
+
+.Box-paragraph{
+  @include center-block;
+  width: 85%;
+}

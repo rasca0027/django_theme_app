@@ -1,0 +1,60 @@
+.GliaH2{
+  font-size: 32px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  line-height: 36px;
+  color: $glia-darkBlue;
+}
+
+.GliaH3{
+  //font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+  color: $glia-darkBlue;
+}
+
+.GliaP{
+  color: $glia-darkBlue;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+
+.SectionP{
+  @extend .GliaP;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.GliaP--14px{
+  color: $glia-darkBlue;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.GliaP--16px{
+  color: $glia-darkBlue;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.WhiteText{
+  color: $white;
+}
+
+
+.GreenText{
+  color: $green;
+}
+
+.SelogText{
+  color: $selago;
+}
+
+.CornflowerBlueText{
+  color: $cornflower-blue
+}
+

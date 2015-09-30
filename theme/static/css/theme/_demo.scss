@@ -1,0 +1,40 @@
+.DemoSection{
+  @extend .Section--white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding-right: 15px;
+}
+
+.DemoSection-form{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.DemoDescriptions{
+  //col-md-5
+
+  //@include make-xs-column-offset(1);
+  @include make-xs-column(12);
+  @include make-sm-column-offset(1);
+  @include make-sm-column(10);
+  @include make-md-column-offset(0);
+  @include make-md-column(5);
+
+  margin-top: 30px;
+  @media (min-width: $screen-md-min) {
+    margin-top: 0;
+  }
+
+  *{
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+      text-align: left;
+    }
+  }
+
+}
+
+.DemoHeader{
+  font-size: 24px;
+  margin-top: 0;
+}

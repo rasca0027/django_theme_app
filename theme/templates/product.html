@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %}
+    Event/Log Aggregator
+{% endblock %}
+
+
+{% block body %}
+
+    {% include 'components/header.html' with light=True title='Big Data rolls the world' background='BackgroundPurple' %}
+
+    <div class="Section--white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2 class="GliaH2 text-center">Event/Log Aggregator</h2>
+                    <p class="GliaP">
+                        GliaCloud makes it easy to collect and store data while giving you the powerful tools you need to analyze it.  Our solution tracks user behavior across all channels and aggregates the data to help you capitalize on the invaluable insights. GliaCloud is not bound to structured queries, empowering you with the freedom to ask any business question.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1">
+                    {% include 'components/stacked-content.html' with text_left=True image='icons/img_internalData.png' header='Internal Enterprise data' content='GliaCloud offers a new generation platform integrating data mining and predictive tools to allow companies in various industries to efficiently utilize their own data. '%}
+                </div>
+                <div class="col-sm-5">
+                    {% include 'components/stacked-content.html' with text_left=True image='icons/img_externalData.png' header='External Public data' content='GliaCloud populate with live-updated data from a variety of sources include unstructure data and convert to easy to use structure data. They are a quick and easy way to get realtime data for your applications.'%}
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="Section--lightPurple">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2 class="GliaH2 text-center">Data Management Platform </h2>
+                </div>
+            </div>
+
+            <div class="row Section-component">
+                <div class="col-sm-push-5 col-sm-5 ">
+                    <img class="GliaImage" src="{% static 'icons/img_taskManagement.png' %}"/>
+                </div>
+                <div class="col-sm-5 col-sm-pull-5 col-xs-offset-1">
+                    {% include 'components/stacked-content.html' with text_left=True header='Task Management' content='Enterprises and individuals can work with large data sets, develop and collaborate on models at scale without building complicated structure or learning algorithm'%}
+                </div>
+            </div>
+
+
+            <div class="row Section-component">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <img class="GliaImage" src="{% static 'icons/img_reportingService.png' %}"/>
+                </div>
+                <div class="col-sm-5 col-xs-offset-1 col-sm-offset-0">
+                    {% include 'components/stacked-content.html' with text_left=True header='Reporting Service' content='For small and mid size company, a turnkey reporting API can help them to easily observe the raw data gathered from their devices.' content2='GliaCloud want to helps the analyst look beyond metrics, and learn the factor inside. You only requires basic knowledge of SQL'%}
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="Section--white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2 class="GliaH2 text-center">Value Added Service</h2>
+
+                    <img class='GliaImage Section-component' src="{% static 'icons/img_valueAddedService.png' %}" alt="">
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class="col-sm-5 col-xs-offset-1 Section-component">
+                    {% include 'components/stacked-content.html' with text_left=True header='Data Insight and Modeling' content='A smart data discovery service on the cloud help user get answers and new insights to make business decision. For example, user can select a target outcome, and see what is the most important driver associated to the results.'%}
+                </div>
+                <div class="col-sm-5 col-xs-offset-1 col-sm-offset-0 Section-component">
+                    {% include 'components/stacked-content.html' with text_left=True header='Opinion Mining' content='Our opinion mining expertise helps our clients extract the value of external big data from online sources such as web posting, government open data and social network.'%}
+                </div>
+
+            </div>
+
+            {% include 'demo/request-demo-row.html' %}
+
+        </div>
+    </div>
+
+
+
+{% endblock %}

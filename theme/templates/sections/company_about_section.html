@@ -1,0 +1,28 @@
+{% extends 'sections/base_section.html' %}
+
+{% block background-class %}
+    BackgroundWhite
+{% endblock %}
+
+
+{% block title-class %}
+   GreenText
+{% endblock %}
+
+{% block section-title %}
+   We believe Human,  and trust Data
+{% endblock%}
+
+{% block section-body %}
+    <div class="row">
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='img_about_why' title='WHY WE STARTED' content='Building a reliable data infrastructure and extract valuable insight requires a lot of talents, effort, resources, time, and money. We are determined to fix this problem for everyone.'%}
+        </div>
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='img_about_mission' title='OUR MISSION' content='GliaCloud aims to make your enterprise internal data as well as any public data related to your business easily accessible, and applied for monetization and generate values.'%}
+        </div>
+        <div class="col-sm-4">
+            {% include 'components/stacked-content.html' with icon='img_about_whatwedo' title='WHAT WE DO' content='GliaCloud provides a fully integrated data management platform for real-time data curation, analysis and visualisation, as well as allowing collaboration with various parties with ease.'%}
+        </div>
+    </div>
+{% endblock %}
